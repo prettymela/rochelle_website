@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123c35">
+  <meta name="description" content="A directory of municipal offices and public services in Padre Garcia, Batangas.">
+  <title>Municipal Services Directory | Padre Garcia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="#home" aria-label="Padre Garcia Public Services home">
+        <img src="LOGO.jpg" alt="Padre Garcia Polytechnic College logo" width="52" height="52">
+        <span>
+          <strong>Padre Garcia</strong>
+          <small>Public Services Directory</small>
+        </span>
+      </a>
+    </div>
+    <div class="hero" id="home">
+      <p class="eyebrow">BATANGAS · COMMUNITY DIRECTORY</p>
+      <h1>Find the right office.<br><span>Get the help you need.</span></h1>
+      <p class="hero-copy">A simple guide to municipal departments and public services in Padre Garcia.</p>
+      <a class="hero-button" href="#directory">Explore the directory <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="emergency-banner" aria-label="Emergency hotline">
+      <div class="emergency-mark" aria-hidden="true">!</div>
+      <div>
+        <p class="emergency-label">NEED IMMEDIATE HELP?</p>
+        <p class="emergency-copy">For emergencies in the Philippines, call <a href="tel:911">911</a>.</p>
+      </div>
+      <a class="emergency-call" href="tel:911">Call 911 <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="directory-section" id="directory">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HERE TO HELP</p>
+          <h2>Municipal offices</h2>
+          <p class="section-copy">Browse services and find where to start.</p>
+        </div>
+        <p class="office-count"><strong id="result-count">11</strong> offices listed</p>
+      </div>
+
+      <div class="directory-tools">
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search municipal offices</span>
+          <input id="office-search" type="search" placeholder="Search offices or services..." autocomplete="off">
+          <kbd>Ctrl K</kbd>
+        </label>
+        <div class="filters" role="group" aria-label="Filter offices by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All offices</button>
+          <button class="filter-button" type="button" data-filter="administration" aria-pressed="false">Administration</button>
+          <button class="filter-button" type="button" data-filter="public-services" aria-pressed="false">Public services</button>
+          <button class="filter-button" type="button" data-filter="community" aria-pressed="false">Community</button>
+        </div>
+      </div>
+
+      <div class="office-grid" id="office-grid">
+        <article class="office-card" data-category="administration" data-search="municipal hall general municipal concerns assistance phone 043 430 0319">
+          <div class="card-top"><span class="office-icon icon-green" aria-hidden="true">⌂</span><span class="category-label">Administration</span></div>
+          <h3>Municipal Hall</h3>
+          <p class="office-description">General municipal concerns and assistance.</p>
+          <div class="office-contacts"><span class="contact-label">PHONE</span><a href="tel:+63434300319">(043) 430 0319</a></div>
+        </article>
+        <article class="office-card" data-category="public-services" data-search="municipal police station PNP crime reports public safety police assistance hotline telephone cellphone">
+          <div class="card-top"><span class="office-icon icon-blue" aria-hidden="true">✚</span><span class="category-label">Public services</span></div>
+          <h3>Municipal Police Station (PNP)</h3>
+          <p class="office-description">Crime reports, public safety, and police assistance.</p>
+          <div class="office-contacts"><span class="contact-label">HOTLINE</span><a href="tel:166">166</a><span class="contact-label">TELEPHONE</span><a href="tel:5159209">515-9209</a><span class="contact-label">CELLPHONES</span><a href="tel:+639052924038">0905-292-4038</a><a href="tel:+639286637762">0928-663-7762</a></div>
+        </article>
+        <article class="office-card" data-category="public-services" data-search="bureau fire protection BFP fire emergencies rescue save lives properties phone social handle">
+          <div class="card-top"><span class="office-icon icon-orange" aria-hidden="true">!</span><span class="category-label">Public services</span></div>
+          <h3>Bureau of Fire Protection (BFP)</h3>
+          <p class="office-description">Fire emergencies and rescue. “Save Lives and Properties.”</p>
+          <div class="office-contacts"><span class="contact-label">TELEPHONE</span><a href="tel:5151177">515-11-77</a><span class="contact-label">CELLPHONE</span><a href="tel:+639668715388">0966-871-53-88</a><span class="contact-label">SOCIAL HANDLE</span><span>@bfp.riva.padregarcia.fs</span></div>
+        </article>
+        <article class="office-card" data-category="public-services" data-search="municipal disaster risk reduction management MDRRMO disaster response rescue evacuation email">
+          <div class="card-top"><span class="office-icon icon-red" aria-hidden="true">⚑</span><span class="category-label">Public services</span></div>
+          <h3>Municipal Disaster Risk Reduction and Management Office (MDRRMO)</h3>
+          <p class="office-description">Disaster response, rescue, and evacuation.</p>
+          <div class="office-contacts"><span class="contact-label">EMAIL</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mdrrmo%40padregarcia.gov.ph" target="_blank" rel="noopener noreferrer">mdrrmo@padregarcia.gov.ph</a></div>
+        </article>
+        <article class="office-card" data-category="community" data-search="Padre Garcia Development Cooperative phone yahoo email">
+          <div class="card-top"><span class="office-icon icon-yellow" aria-hidden="true">◇</span><span class="category-label">Community</span></div>
+          <h3>Padre Garcia Development Cooperative</h3>
+          <p class="office-description">Cooperative information and member assistance.</p>
+          <div class="office-contacts"><span class="contact-label">PHONE</span><a href="tel:+639209680665">0920 968 0665</a><span class="contact-label">EMAIL</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=padecocoop%40yahoo.com" target="_blank" rel="noopener noreferrer">padecocoop@yahoo.com</a></div>
+        </article>
+        <article class="office-card" data-category="public-services" data-search="Rural Health Unit RHU Municipal Health Office health services medical assistance email">
+          <div class="card-top"><span class="office-icon icon-green" aria-hidden="true">✚</span><span class="category-label">Public services</span></div>
+          <h3>Rural Health Unit (RHU) / Municipal Health Office</h3>
+          <p class="office-description">Health services and medical assistance.</p>
+          <div class="office-contacts"><span class="contact-label">EMAIL</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=health%40padregarcia.gov.ph" target="_blank" rel="noopener noreferrer">health@padregarcia.gov.ph</a></div>
+        </article>
+        <article class="office-card" data-category="community" data-search="Municipal Social Welfare Development Office MSWDO vulnerable residents disaster affected families phone email">
+          <div class="card-top"><span class="office-icon icon-pink" aria-hidden="true">♡</span><span class="category-label">Community</span></div>
+          <h3>Municipal Social Welfare and Development Office (MSWDO)</h3>
+          <p class="office-description">Assistance for vulnerable residents and disaster-affected families.</p>
+          <div class="office-contacts"><span class="contact-label">PHONE</span><a href="tel:+63435159341">(043) 515-9341</a><span class="contact-label">EMAIL</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mswdo%40padregarcia.gov.ph" target="_blank" rel="noopener noreferrer">mswdo@padregarcia.gov.ph</a></div>
+        </article>
+        <article class="office-card" data-category="public-services" data-search="Municipal Engineering Office road hazards damaged public infrastructure concerns email">
+          <div class="card-top"><span class="office-icon icon-orange" aria-hidden="true">⌁</span><span class="category-label">Public services</span></div>
+          <h3>Municipal Engineering Office</h3>
+          <p class="office-description">Road hazards, damaged public infrastructure, and related concerns.</p>
+          <div class="office-contacts"><span class="contact-label">EMAIL</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=engr%40padregarcia.gov.ph" target="_blank" rel="noopener noreferrer">engr@padregarcia.gov.ph</a></div>
+        </article>
+        <article class="office-card" data-category="public-services" data-search="Municipal Environment Natural Resource Officer MENRO environment natural resources email">
+          <div class="card-top"><span class="office-icon icon-green" aria-hidden="true">❋</span><span class="category-label">Public services</span></div>
+          <h3>Municipal Environment &amp; Natural Resource Officer (MENRO)</h3>
+          <p class="office-description">Municipal environment and natural resource concerns.</p>
+          <div class="office-contacts"><span class="contact-label">EMAIL</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=menro%40padregarcia.gov.ph" target="_blank" rel="noopener noreferrer">menro@padregarcia.gov.ph</a></div>
+        </article>
+        <article class="office-card" data-category="community" data-search="Local Electric Utility electrical hazards power interruptions email">
+          <div class="card-top"><span class="office-icon icon-yellow" aria-hidden="true">ϟ</span><span class="category-label">Community</span></div>
+          <h3>Local Electric Utility</h3>
+          <p class="office-description">Electrical hazards and power interruptions.</p>
+          <div class="office-contacts">
+            <span class="contact-label">PHONE</span>
+            <a href="tel:+639634650308">0963 465 0308</a>
+            <span class="contact-label">EMAIL</span>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=rochellemandigma483%40gmail.com" target="_blank" rel="noopener noreferrer">rochellemandigma483@gmail.com</a>
+        </div>
+        </article>
+
+
+        <article class="office-card contact-card-emergency" data-category="community" data-search="National Emergency Hotline 911 emergency">
+          <div class="card-top"><span class="office-icon icon-red" aria-hidden="true">!</span><span class="category-label">Emergency</span></div>
+          <h3>National Emergency Hotline</h3>
+          <p class="office-description">Call for immediate emergency assistance.</p>
+          <div class="office-contacts"><span class="contact-label">EMERGENCY</span><a href="tel:911">911</a></div>
+        </article>
+      </div>
+      <p class="no-results" id="no-results" hidden>No offices match your search. Try another name or service.</p>
+      <p class="directory-note"><strong>Directory note:</strong> Contact details are shown as provided. Please confirm current information with the relevant office before sharing.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="#home">Padre Garcia <span>Public Services Directory</span></a>
+      <p>For directory updates, please verify information with the relevant municipal office.</p>
+      <span class="copyright">© 2026 · Community information</span>
+    </div>
+  </footer>
+</body>
+</html>
